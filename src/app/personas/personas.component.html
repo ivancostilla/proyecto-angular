@@ -3,6 +3,15 @@
   <div class="row">
     <div class="col">
       <h1 class="h6">Listado de Personas</h1>
+      <!-- los corchetes son para indicarle a angular que es propiedad html
+      va a estar asociada a una propiedad de angular -->
+      <button class="btn btn-primary" [disabled]='deshabilitar'
+      (click)='agregarPersona()'>
+      <!-- los eventos se ponen dentro d parentesis y se lo asocia a un
+      metodo, esto es el event biding -->
+        Agregar Persona
+      </button>
+      <p>{{ mensaje }}</p>
       <app-componente-con-cli></app-componente-con-cli>
     </div>
   </div>
