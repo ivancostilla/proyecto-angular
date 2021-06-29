@@ -1,1 +1,14 @@
 <p>componente-con-cli works!</p>
+<div>
+  <p>Nombre: <b>{{ nombre }}.</b></p>
+  <p>Apellido: <b>{{ apellido }}.</b></p>
+ <!--  podemos realizar expresiones -->
+  <p>Edad: <b>{{ getEdad() > 1 ? getEdad() : null }}.</b></p>
+</div>
+<!-- cuando liberamos la presión de una tecla mostramos la tecla que se
+   apretó -->
+<div (keyup)='0'>
+  <label for="">Repetidor:</label>
+  <input type="text" #entrada />
+  {{ entrada.value }}
+</div>
