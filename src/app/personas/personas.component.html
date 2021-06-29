@@ -16,10 +16,13 @@
 
       <label for="">Titulo persona</label>
       <!-- capturar eventos -->
+      <!-- [] para property binding -->
+      <!-- () para event binding -->
+      <!-- usar los dos juntos es el two way binding -->
       <input
        type="text"
        class="form-control"
-       (input)='modificarTitulo($event)'
+       [(ngModel)]='titulo'
       />
       {{ titulo }}
     </div>
