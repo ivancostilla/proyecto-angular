@@ -14,7 +14,13 @@ export class PersonasComponent {
  persona = 'nueva persona';
  deshabilitar = false;
  mensaje = 'No se ha agregado ninguna persona';
+ titulo = '';
  agregarPersona(){
   this.mensaje = 'Persona Agregada';
+ }
+
+ modificarTitulo(event: Event) {
+   //este es el e.target.value en un input
+  this.titulo = (<HTMLInputElement>event.target).value
  }
 }

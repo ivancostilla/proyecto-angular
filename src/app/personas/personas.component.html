@@ -13,6 +13,15 @@
       </button>
       <p>{{ mensaje }}</p>
       <app-componente-con-cli></app-componente-con-cli>
+
+      <label for="">Titulo persona</label>
+      <!-- capturar eventos -->
+      <input
+       type="text"
+       class="form-control"
+       (input)='modificarTitulo($event)'
+      />
+      {{ titulo }}
     </div>
   </div>
 </div>
