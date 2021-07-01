@@ -8,6 +8,7 @@ import { ComponenteConCLIComponent } from './componente-con-cli/componente-con-c
 import { FormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { DirectivaNgIfComponent } from './directiva-ng-if/directiva-ng-if.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DirectivaNgIfComponent } from './directiva-ng-if/directiva-ng-if.compon
     PersonasComponent,
     ComponenteConCLIComponent,
     CalculadoraComponent,
-    DirectivaNgIfComponent
+    DirectivaNgIfComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>{{titulo}}</h1>
+  <!-- for de angular: -->
+  <!-- se declara una variable y le decimos que recorra cada persona
+  en el objeto personas -->
+  <!-- personas es el objeto que creamos en el ng-for.components.ts -->
+  <!-- en el let i guardamos el index -->
+    <div *ngFor='let persona of personas; let i =index'>
+      <p>
+        <span>-{{ i+1 }} {{ persona.nombre }} </span>
+        <span>{{ persona.apellido }}.</span>
+      </p>
+    </div>
+  <form action="">
+    <input type="text">
+    <input type="text">
+    <button></button>
+  </form>
+</div>
