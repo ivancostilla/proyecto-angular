@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { PersonasComponent } from './personas/personas.component';
 import { ComponenteConCLIComponent } from './componente-con-cli/componente-con-cli.component';
 import { FormsModule } from '@angular/forms';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
     //acá se agregan los componentes:
     AppComponent,
     PersonasComponent,
-    ComponenteConCLIComponent
+    ComponenteConCLIComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 //para ccrear componentes inline con el CLI
-//ng -g -c componente -s -t
+//ng g c componente -s -t
 @Component({
   //esta va a ser la etiqueta que debemos usar para mostrar el componente:
   selector: 'app-personas',

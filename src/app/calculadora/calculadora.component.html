@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Aplicacion de calculadora</h1>
+  <!-- calculadora usando solo eventbinding -->
+  <label for="operandoA">Operando A</label>
+  <input type="number" name="operandoA" id="" class="form-control"
+  (input)='obtenerA($event)'/>
+  <br/>
+  <br/>
+  <label for="operandoB">Operando B</label>
+  <!-- segundo valor usando two way binding -->
+  <input type="number" name="operandoB" id="" class="form-control"
+  [(ngModel)]='b'/>
+  <br/>
+  <br/>
+  <button class="btn btn-primary" (click)='Sumar()'
+  >
+    Sumar
+  </button>
+  <p>Resultado: <b>{{ resultado }}</b></p>
+</div>
