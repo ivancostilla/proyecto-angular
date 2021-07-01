@@ -7,6 +7,7 @@ import { PersonasComponent } from './personas/personas.component';
 import { ComponenteConCLIComponent } from './componente-con-cli/componente-con-cli.component';
 import { FormsModule } from '@angular/forms';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { DirectivaNgIfComponent } from './directiva-ng-if/directiva-ng-if.component';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
     AppComponent,
     PersonasComponent,
     ComponenteConCLIComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    DirectivaNgIfComponent
   ],
   imports: [
     BrowserModule,

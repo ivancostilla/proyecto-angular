@@ -1,0 +1,14 @@
+<div class="container">
+  <button class="btn btn-primary"
+  (click)='agregarPersona1()'>
+  Agregar Persona
+  </button>
+  <!-- condicional de angular: -->
+  <p *ngIf="mostrar; else sinPersona">{{ mensaje }}</p>
+
+  <!-- esto se  muestra si el if es falso -->
+  <ng-template #sinPersona>
+    <p>No se agregó ninguna persona</p>
+  </ng-template>
+  <br/><br/><br/><br/>
+</div>

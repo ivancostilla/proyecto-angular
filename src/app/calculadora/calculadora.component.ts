@@ -21,7 +21,11 @@ obtenerA(event: Event){
 //   this.b = Number((<HTMLInputElement>event.target).value)
 // }
 Sumar(){
-  this.resultado = (this.a + this.b).toString()
+  this.resultado = (this.a + Number(this.b)).toString()
 }
 
+//tmbien se puede hacer asi:
+// sumar():void{
+//   this.resultado = this.a + this.b;
+// }
 }
