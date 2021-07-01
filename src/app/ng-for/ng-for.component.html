@@ -1,19 +1,43 @@
 <div class="container">
   <h1>{{titulo}}</h1>
-  <!-- for de angular: -->
+  <hr/>
+  <!-- en este form agrego personas de forma dinamica -->
+  <form action="" class="form-row">
+    <div class="form-group col-md-2" >
+      <label for="nombre" class="sr-only">Nombre:</label>
+      <input
+      class="form-control"
+      name="nombre" id="nombre"
+      placeholder="Nombre"
+      type="text"
+      [(ngModel)]='nombreInput'/>
+    </div>
+    <div class="form-group col-md-2" >
+      <label for="apellido" class="sr-only">Apellido:</label>
+      <input
+      class="form-control"
+      name="apellido" id="apellido"
+      placeholder="Apellido"
+      type="text"
+      [(ngModel)]='apellidoInput'/>
+    </div>
+    <div class="col">
+      <button type="submit" class="btn btn-primary"
+      (click)='agregarPersona()'>Agregar</button>
+    </div>
+  </form>
+  <hr/>
+  <br/><br/>
+    <!-- for de angular: -->
   <!-- se declara una variable y le decimos que recorra cada persona
   en el objeto personas -->
   <!-- personas es el objeto que creamos en el ng-for.components.ts -->
   <!-- en el let i guardamos el index -->
     <div *ngFor='let persona of personas; let i =index'>
       <p>
-        <span>-{{ i+1 }} {{ persona.nombre }} </span>
+        <span>-{{ i+1 }}: {{ persona.nombre }} </span>
         <span>{{ persona.apellido }}.</span>
       </p>
     </div>
-  <form action="">
-    <input type="text">
-    <input type="text">
-    <button></button>
-  </form>
+    <br/><br/><br/><br/>
 </div>
