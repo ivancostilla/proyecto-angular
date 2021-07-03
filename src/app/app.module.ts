@@ -12,6 +12,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { PersonaComponent } from './persona/persona.component';
 import { PersonasPadreComponent } from './personas-padre/personas-padre.component';
 import { FormularioHijoComponent } from './formulario-hijo/formulario-hijo.component';
+import { ResultadoHijoComponent } from './resultado-hijo/resultado-hijo.component';
+import { FormularioCalculadoraComponent } from './formulario-calculadora/formulario-calculadora.component';
+import { DesafioCalculadoraPadreComponent } from './desafio-calculadora-padre/desafio-calculadora-padre.component';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FormularioHijoComponent } from './formulario-hijo/formulario-hijo.compo
     NgForComponent,
     PersonaComponent,
     PersonasPadreComponent,
-    FormularioHijoComponent
+    FormularioHijoComponent,
+    ResultadoHijoComponent,
+    FormularioCalculadoraComponent,
+    DesafioCalculadoraPadreComponent
   ],
   imports: [
     BrowserModule,

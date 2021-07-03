@@ -1,0 +1,8 @@
+<h1>Aplicacion de calculadora desafio con componentes padre e hijo</h1>
+<app-formulario-calculadora
+(resultadoSuma)= 'Resultado($event)'
+></app-formulario-calculadora>
+<app-resultado-hijo
+ [resultadoHijo] = 'resultadoPadre'
+></app-resultado-hijo>
+<br/>
