@@ -11,11 +11,13 @@ export class FormularioHijoComponent {
   //envio de props de hijo a padre
   @Output() personaCreada = new EventEmitter<Persona>();
 
+  //two ay bindin nos deja modificar la info, enviarla y recibirla entr componentes
+  //local reference solo enviamos info de la plantilla html a el componente
 
-  nombreInput: string = '';
-  apellidoInput: string = '';
-  agregarPersona(){
-    let persona1 = new Persona(this.nombreInput,this.apellidoInput)
+
+  //local reference:
+  agregarPersona(nombreRef: HTMLInputElement,apellidoRef: HTMLInputElement){
+    let persona1 = new Persona(nombreRef.value,apellidoRef.value)
     //dos formas de agregar dinamicamente 1 persona:
     // this.personas.push( persona1 );
     // this.personas = [...this.personas, persona1]
