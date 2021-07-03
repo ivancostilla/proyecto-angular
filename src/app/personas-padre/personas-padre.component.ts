@@ -8,8 +8,6 @@ import { Persona } from '../ng-for/persona.model';
 })
 export class PersonasPadreComponent {
   titulo: string = 'Listado de Personas';
-  nombreInput: string = '';
-  apellidoInput: string = '';
 
   personas: Persona[] = [
     new Persona('Juan','Pérez'),
@@ -17,11 +15,8 @@ export class PersonasPadreComponent {
     new Persona('Lolo', 'Zapata')
   ]
 
-  agregarPersona(){
-    let persona1 = new Persona(this.nombreInput,this.apellidoInput)
-    //dos formas de agregar dinamicamente 1 persona:
-    // this.personas.push( persona1 );
-    this.personas = [...this.personas, persona1]
+  //este metodo se crea para recibir la info del hijo
+  personaAgregada(persona: Persona){
+    this.personas = [...this.personas, persona]
   }
-
 }

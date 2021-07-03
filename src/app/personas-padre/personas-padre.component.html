@@ -1,31 +1,11 @@
 <hr>
 <h1>Listado de personas: envio de props en componente padre a hijo</h1>
 <hr>
-
-<form action="" class="form-row">
-    <div class="form-group col-md-2" >
-      <label for="nombre" class="sr-only">Nombre:</label>
-      <input
-      class="form-control"
-      name="nombre" id="nombre"
-      placeholder="Nombre"
-      type="text"
-      [(ngModel)]='nombreInput'/>
-    </div>
-    <div class="form-group col-md-2" >
-      <label for="apellido" class="sr-only">Apellido:</label>
-      <input
-      class="form-control"
-      name="apellido" id="apellido"
-      placeholder="Apellido"
-      type="text"
-      [(ngModel)]='apellidoInput'/>
-    </div>
-    <div class="col">
-      <button type="submit" class="btn btn-primary"
-      (click)='agregarPersona()'>Agregar</button>
-    </div>
-  </form>
+<!-- así recibimos la prop del componente hijo,
+   acá estamos en el componente padre -->
+<app-formulario-hijo
+ (personaCreada)='personaAgregada($event)'
+></app-formulario-hijo>
   <hr/>
   <br/><br/>
   <!-- con el binding mandamos la info al componente hijo:

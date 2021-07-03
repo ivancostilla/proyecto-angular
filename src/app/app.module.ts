@@ -11,6 +11,7 @@ import { DirectivaNgIfComponent } from './directiva-ng-if/directiva-ng-if.compon
 import { NgForComponent } from './ng-for/ng-for.component';
 import { PersonaComponent } from './persona/persona.component';
 import { PersonasPadreComponent } from './personas-padre/personas-padre.component';
+import { FormularioHijoComponent } from './formulario-hijo/formulario-hijo.component';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PersonasPadreComponent } from './personas-padre/personas-padre.componen
     DirectivaNgIfComponent,
     NgForComponent,
     PersonaComponent,
-    PersonasPadreComponent
+    PersonasPadreComponent,
+    FormularioHijoComponent
   ],
   imports: [
     BrowserModule,
