@@ -15,6 +15,7 @@ import { FormularioHijoComponent } from './formulario-hijo/formulario-hijo.compo
 import { ResultadoHijoComponent } from './resultado-hijo/resultado-hijo.component';
 import { FormularioCalculadoraComponent } from './formulario-calculadora/formulario-calculadora.component';
 import { DesafioCalculadoraPadreComponent } from './desafio-calculadora-padre/desafio-calculadora-padre.component';
+import { LoggingService } from './LoggingService.service';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DesafioCalculadoraPadreComponent } from './desafio-calculadora-padre/de
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  //servicios para importarlo a todos los componentes
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
