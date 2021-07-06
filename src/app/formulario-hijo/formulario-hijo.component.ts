@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Persona } from '../ng-for/persona.model';
 
 @Component({
@@ -14,10 +14,14 @@ export class FormularioHijoComponent {
   //two ay bindin nos deja modificar la info, enviarla y recibirla entr componentes
   //local reference solo enviamos info de la plantilla html a el componente
 
+  //uso de local reference y viewChild
+  @ViewChild('nombreRef') nombre: ElementRef;
+  @ViewChild('apellidoRef') apellido: ElementRef;
+
 
   //local reference:
-  agregarPersona(nombreRef: HTMLInputElement,apellidoRef: HTMLInputElement){
-    let persona1 = new Persona(nombreRef.value,apellidoRef.value)
+  agregarPersona(){
+    let persona1 = new Persona(this.nombre.nativeElement, this.apellido.nativeElement)
     //dos formas de agregar dinamicamente 1 persona:
     // this.personas.push( persona1 );
     // this.personas = [...this.personas, persona1]
