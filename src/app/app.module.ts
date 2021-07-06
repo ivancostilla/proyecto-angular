@@ -16,6 +16,7 @@ import { ResultadoHijoComponent } from './resultado-hijo/resultado-hijo.componen
 import { FormularioCalculadoraComponent } from './formulario-calculadora/formulario-calculadora.component';
 import { DesafioCalculadoraPadreComponent } from './desafio-calculadora-padre/desafio-calculadora-padre.component';
 import { LoggingService } from './LoggingService.service';
+import { PersonasService } from './personas.service';
 //hay que importar formsmodule para usar two way binding
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { LoggingService } from './LoggingService.service';
     FormsModule
   ],
   //servicios para importarlo a todos los componentes
-  providers: [LoggingService],
+  providers: [LoggingService, PersonasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

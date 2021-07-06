@@ -6,11 +6,16 @@ import { Persona } from '../ng-for/persona.model';
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
-export class PersonaComponent {
+export class PersonaComponent implements OnInit {
 
   //asi pasamos as props desde el componente padre a el hijo
   //(este es el componente hijo)
   @Input() persona: Persona;
 
   @Input() indice: number;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }

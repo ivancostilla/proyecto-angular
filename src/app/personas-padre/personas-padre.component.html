@@ -3,9 +3,9 @@
 <hr>
 <!-- así recibimos la prop del componente hijo,
    acá estamos en el componente padre -->
-<app-formulario-hijo
- (personaCreada)='personaAgregada($event)'
-></app-formulario-hijo>
+<app-formulario-hijo></app-formulario-hijo>
+<!-- no es necesario escuchar el evento cuando uso el servicio -->
+<!-- (personaCreada)='personaAgregada($event)' -->
   <hr/>
   <br/><br/>
   <!-- con el binding mandamos la info al componente hijo:
